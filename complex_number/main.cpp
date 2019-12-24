@@ -7,8 +7,10 @@ using namespace coveringstreams;
 int main() {
 
 	complexnumber z1(2, 1);
-	complexnumber z2 = z1.complexconjugate();
-	cout << z2 << endl;
+	cout << z1 << endl;
+	cout << z1.radius() << endl;
+	cout << z1.angle() << endl;
+	z1.polarform();
 	//negative value of the angle represents complex number rotated to the clock-wise direction
 
 }
