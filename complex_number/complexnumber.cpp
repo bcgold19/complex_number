@@ -127,6 +127,12 @@ namespace coveringstreams {
 		return complexnumber(this->GetRe(),-1*(this->GetIm()));
 	}
 
+	bool complexnumber::operator<(complexnumber& other)
+	{
+		return this->norm() < other.norm();
+		
+	}
+
 	void complexnumber::polarform()
 	{
 		std::cout << this->radius() << "exp(" << this->angle() << " i)" << std::endl;

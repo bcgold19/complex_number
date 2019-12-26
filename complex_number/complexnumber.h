@@ -27,6 +27,7 @@ namespace coveringstreams {
 		double angle();
 		complexnumber complexconjugate();
 
+		bool operator<(complexnumber &other);//complex num1<complex num2 , if complex num2's norm is larger
 		void polarform();
 
 	};
